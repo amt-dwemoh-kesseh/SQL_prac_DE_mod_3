@@ -16,7 +16,7 @@ CREATE TABLE products (
   category VARCHAR(50),
   price DECIMAL(10,2) NOT NULL,
   stock_quantity INT NOT NULL CHECK (stock_quantity >= 0),
-  reorder_level INT NOT NULL DEFAULT 10
+  reorder_level INT NOT NULL
 );
 
 -- CUSTOMERS TABLE
